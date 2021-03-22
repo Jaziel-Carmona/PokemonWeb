@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            PokeWeb
+        </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+
+    <body style="background-color: rgb(206, 243, 250);">
+    <img style="display: block; margin: 30px auto;" src="https://images.wikidexcdn.net/mwuploads/esssbwiki/7/77/latest/20111028181540/TituloUniversoPok%C3%A9mon.png">
+    <img style="display: block; margin: 0 auto" src="https://icon-library.com/images/pikachu-png-icon/pikachu-png-icon-3.jpg">
+    
+    <div class="container">
+    <div style="text-align: center;">
+        <h3 style="color: rgb(2, 24, 24); font-style:italic; margin: 30px;">Bienvenido a la Pokedex!!!</h3>
+        <button class="btn btn-warning" onclick="search()">Buscar</button>
+    </div>
+
+        <div id="resultados">
+
+        </div>
+
+        <div style="text-align: right;" id="footerPage">
+            <button style="display: none;" id="buttonBack" onclick="back()" class="btn btn-danger"> <= </button>
+            <button style="display: none;" id="buttonNext" onclick="next()" class="btn btn-success"> => </button>
+        </div>
+    </div>
+    </body>
+
+    <script src="llamadaAPI.js"> </script>
+
+</html>
